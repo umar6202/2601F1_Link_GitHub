@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhythm House</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon image/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhythm House - Inventory & Events</title>
+    
+    <!-- Bootstrap 5 & FontAwesome -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- DataTables Bootstrap 5 Styling CDN -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.2/css/dataTables.bootstrap5.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- UTILITY TOP HEADER -->
+    <div class="header container">
+        <div class="logo">
+            <!-- Logo Section -->
+            <i class="fa-solid fa-headphones"></i>
+            <div>
+                <h2>Rhythm House</h2>
+                <p>Music Shop</p>
+            </div>
+        </div>
+
+        <!-- Search Bar Section -->
+        <div class="search-bar">
+            <form class="input-group">
+                <input type="text" class="form-control" placeholder="Search by movie, band, performer or album...">
+                <button class="btn btn-dark" type="submit">Search</button>
+            </form>
+        </div>
+
+        <!-- Login Section -->
+        <div>
+            <button class="btn btn-outline-dark rounded-pill buttons-login">
+                <a href="contactUS.html" class="nav-link"> <i class="fa-regular fa-user"></i> <span>Login / Register</span></a>
+            </button>
+        </div>
+    </div>
+
+      <!-- navbar  -->
+    <nav class="navbar navbar-expand-md  navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 text-center gap-lg-3">
+                    <li class="nav-item"><a class="nav-link active fw-semibold" href="index.html">HOME</a></li>
+                    <li class="nav-item dropdown music-menu">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            MUSIC
+                        </a>
+                        <ul class="dropdown-menu dropdown">
+                            <li><a class="dropdown-item" href="#">Pop Music</a></li>
+                            <li><a class="dropdown-item" href="#">Rock Music</a></li>
+                            <li><a class="dropdown-item" href="#">Hip Hop</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Trending Songs</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#">MOVIE</a></li> -->
+                    <li class="nav-item"><a class="nav-link" href="pricing.html#contest">LIVE SHOWS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html#price">BOOKS & MAGAZINES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html#contest">OFFERS & CONTESTS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html#member">MEMBERSHIP</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutUS.html">ABOUT US</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container my-5">
+        <!-- HEADER BRANDING -->
+        <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold text-uppercase" style="color: #f5b51b; letter-spacing: 2px;">Rhythm House</h1>
+            <p class="text-light">Search inventory, price lists, upcoming shows, and membership statistics.</p>
+        </div>
+
+        <!-- TABLE 1: MUSIC, MOVIES & MEDIA INVENTORY -->
+        <section class="mb-5" id="price">
+            <div class="cd-albums mb-4">
+                <i class="fa-solid fa-compact-disc"></i>
+                <h2>Store Catalog & Price List</h2>
+            </div>
+            <div class="table-responsive p-3 rounded shadow-sm">
+                <table id="catalogTable" class="table table-dark table-hover width-100">
+                    <thead>
+                        <tr>
+                            <th>Title / Item</th>
+                            <th>Category / Artist</th>
+                            <th>Format / Type</th>
+                            <th>Release Year</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Love Mashup</td><td>Arijit Singh (Solo)</td><td>CD</td><td>2023</td><td>PKR 499</td></tr>
+                        <tr><td>Best of Atif</td><td>Atif Aslam (Solo)</td><td>CD</td><td>2021</td><td>PKR 799</td></tr>
+                        <tr><td>Season 8</td><td>Coke Studio (Band)</td><td>CD</td><td>2015</td><td>PKR 599</td></tr>
+                        <tr><td>Live In Concert</td><td>Armaan Malik (Solo)</td><td>DVD</td><td>2024</td><td>PKR 899</td></tr>
+                        <tr><td>Classic Vibes</td><td>Retro Collection</td><td>Tape (Poems/Kids)</td><td>1995</td><td>PKR 699</td></tr>
+                        <tr><td>Interstellar</td><td>Motion Picture Soundtrack</td><td>Movie DVD</td><td>2014</td><td>PKR 1299</td></tr>
+                        <tr><td>Guitar Legends</td><td>Air Mailed (US Magazine)</td><td>Magazine</td><td>2026</td><td>PKR 1500</td></tr>
+                        <tr><td>Total Guitar</td><td>Air Mailed (US Magazine)</td><td>Magazine</td><td>2026</td><td>PKR 1400</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- TABLE 2: LIVE SHOWS SCHEDULE & DETAILS -->
+        <section class="mb-5" id="contest">
+            <div class="cd-albums mb-4">
+                <i class="fa-solid fa-microphone-lines"></i>
+                <h2>Live Shows & Contests Schedule</h2>
+            </div>
+            <div class="table-responsive p-3 rounded shadow-sm">
+                <table id="showsTable" class="table table-dark table-hover width-100">
+                    <thead>
+                        <tr>
+                            <th>Event / Contest</th>
+                            <th>Performer / Band</th>
+                            <th>Date & Time</th>
+                            <th>Duration</th>
+                            <th>Entry Fee</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Rock Battle 2026</td><td>The Local Train</td><td>June 15, 08:00 PM</td><td>3 Hours</td><td>PKR 1500</td></tr>
+                        <tr><td>Pop Night Live</td><td>Taylor Swift Tribute</td><td>July 02, 07:30 PM</td><td>2.5 Hours</td><td>PKR 2000</td></tr>
+                        <tr><td>Kids Poem Recital</td><td>Local Artists</td><td>July 12, 11:00 AM</td><td>2 Hours</td><td>Free</td></tr>
+                        <tr><td>Guitar Solo Contest</td><td>Guitar Legends Heats</td><td>Aug 20, 04:00 PM</td><td>4 Hours</td><td>PKR 500</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- TABLE 3: MEMBERSHIP & SALES STATISTICS -->
+        <section class="mb-5" id="member">
+            <div class="cd-albums mb-4">
+                <i class="fa-solid fa-users"></i>
+                <h2>Membership Perks & Monthly Statistics</h2>
+            </div>
+            <div class="table-responsive p-3rounded shadow-sm">
+                <table id="memberStatsTable" class="table table-dark table-hover width-100">
+                    <thead>
+                        <tr>
+                            <th>Tier / Month</th>
+                            <th>Enrollment Criteria</th>
+                            <th>Subsequent Benefits</th>
+                            <th>Albums Sold (Monthly Stats)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Classic Earner</td><td>Any purchase of Rs. 200</td><td>1 Point per Rs. 50 spent</td><td>1,240 Albums (Jan)</td></tr>
+                        <tr><td>Silver Lounge</td><td>Accumulate 500 Points</td><td>5% Off on US Magazines</td><td>1,450 Albums (Feb)</td></tr>
+                        <tr><td>Gold Rhythm</td><td>Accumulate 1500 Points</td><td>Free Entry to Selected Contests</td><td>1,890 Albums (Mar)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+
+        <!-- footer  -->
+
+    <footer class="bg-theme-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4 text-center text-md-start">
+                <div class="col-md-4">
+                    <h5 class="text-theme-accent fw-bold mb-3"><img src="favicon image/favicon.png" alt="logo"
+                            width="50px" height="50px"> Rhythm House</h5>
+                    <p class="small text-white-50 lh-base mb-0">
+                        Rhythm House is a music store in the city which offers not only music but contests and live
+                        shows</p>
+                </div>
+                <div class="col-md-4 px-md-5">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="index.html" class="text-white-50 small"><i
+                                    class="fa-solid fa-chevron-right me-2 small"></i>Home</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 small"><i
+                                    class="fa-solid fa-chevron-right me-2 small"></i>Albums Collection</a></li>
+                        <li class="mb-2"><a href="aboutUS.html" class="text-white-50 small"><i
+                                    class="fa-solid fa-chevron-right me-2 small"></i>About Us</a></li>
+                        <li class="mb-2"><a href="contactUS.html" class="text-white-50 small"><i
+                                    class="fa-solid fa-chevron-right me-2 small"></i>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-white-50">
+                    <h5 class="fw-bold text-white mb-3">Get In Touch</h5>
+                    <p class="small mb-2"><i class="fa-solid fa-location-dot text-theme-accent me-2"></i> Aptech North
+                        Karachi</p>
+                    <p class="small mb-3"><i
+                            class="fa-solid fa-envelope text-theme-accent me-2"></i>rhythmhouse@gmail.com</p>
+                    <div class="d-flex justify-content-center justify-content-md-start gap-4">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/" class="text-white-50"><i
+                                class="fa-brands fa-instagram text-danger"></i></a>
+                        <a href="https://x.com/"><i class="fa-brands fa-x-twitter text-light"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr style="width: 50%;" class="mx-auto my-4 opacity-25">
+            <div class="text-center text-white-50 small">
+                <p class="mb-0"> &copy; 2026 Rhythm House | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- Core Dependencies: jQuery, Bootstrap Bundle, DataTables Core & Bootstrap Integration -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/2.0.2/js/dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/2.0.2/js/dataTables.bootstrap5.min.js"></script>
+
+    <!-- Simple DataTable Initialization Script -->
+    <script>
+        $(document).ready(function () {
+            // Initializes all three tables instantly with standard pagination and search mechanics
+            $('#catalogTable').DataTable({ pageLength: 5 });
+            $('#showsTable').DataTable({ pageLength: 5 });
+            $('#memberStatsTable').DataTable({ paging: false, info: false, searching: false });
+        });
+    </script>
+</body>
+</html>
+</body>
+</html>

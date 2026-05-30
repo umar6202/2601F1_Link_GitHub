@@ -1,0 +1,781 @@
+/* Core & Base Settings */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+/* Typography & Theming */
+body {
+    background:
+    linear-gradient(rgba(10,10,20,0.85), rgba(10,10,20,0.95)),
+    url("https://images.unsplash.com/photo-1511379938547-c1f69419868d");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    gap: 10px;
+    font-family: 'Berkshire Swash', cursive;
+    margin-top: 10px;
+    color: white;
+}
+
+
+.fa-headphones {
+    font-size: 80px;
+    color: #f5b51b;
+}
+
+.search-bar {
+    display: flex;
+    gap: 5px;
+}
+
+.search-bar button {
+    background: #f5b51b;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.buttons-login {
+    background: rgba(31, 36, 54, 0.9);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    white-space: nowrap;
+    /* Prevents text breaking on tablet screens */
+}
+
+/* Responsive Stack Adjustments for Mobile Viewports */
+@media (max-width: 767.98px) {
+    .header {
+        flex-direction: column !important;
+        gap: 15px;
+    }
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(to right, #151825, #1a1e2e);
+    border-top: 2px solid #2f3550;
+    border-bottom: 2px solid #2f3550;
+}
+
+.navbar a:hover {
+    background: #f5b51b;
+    color: black;
+}
+
+/* carousel slide */
+.carousel-inner {
+    height: cover;
+}
+
+/* carousel caption */
+
+/* FIRST HERO IMAGE */
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    transform: translateY(-50%);
+    text-align: left;
+}
+
+/* Carousel Text  */
+.discover {
+    font-size: 5rem;
+    font-weight: 800;
+    color: white;
+}
+
+.subtitles {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.live {
+    color: #f5b51b;
+}
+
+.live-btn {
+    background: #f5b51b;
+}
+
+.hero-btn {
+    color: rgb(247, 240, 240);
+    border: none;
+    padding: 14px 35px;
+    border-radius: 8px;
+    font-weight: 750;
+    margin-top: 20px;
+}
+
+.p-img-1 {
+    font-size: 25px;
+    color: white;
+    margin-top: 15px;
+}
+
+/* SECOND HERO IMAGE */
+.moment {
+    color: #7c4dff;
+}
+
+.moment-btn {
+    background: #5a17d8;
+}
+
+/* THIRD HERO IMAGE  */
+
+.experiences {
+    color: #ff4fd8;
+}
+
+.experiences-btn {
+    background: #ff2d7a;
+}
+
+/* Available albums category */
+
+.available-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.available-heading::before,
+.available-heading::after {
+    content: "";
+    width: 80px;
+    height: 3px;
+    margin-top: 8px;
+}
+
+.available-h2 {
+    color: #f5b51b;
+    font-weight: bold;
+    margin-top: 5px;
+
+}
+
+.available-heading::before {
+    background: linear-gradient(to right, transparent, #f5b51b);
+}
+
+.available-heading::after {
+    background: linear-gradient(to left, transparent, #f5b51b);
+}
+
+.fa-music {
+    font-size: 20px;
+    color: #f5b51b;
+}
+
+.tag-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin-top: -22px;
+    font-style: italic;
+}
+
+/* Albums Button */
+
+.album-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    margin-top: -2px;
+}
+
+.album-tabs button {
+    display: flex;
+    background: transparent;
+    color: white;
+    border: 1px solid #2f3550;
+    padding: 10px 28px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.albums-icon {
+    color: #f5b51b;
+}
+
+
+.album-tabs button:hover {
+    background: #f5b51b;
+    color: black;
+    border-color: #f5b51b;
+}
+
+/* CD Heading */
+
+.cd-albums {
+    display: flex;
+    color: #f5b51b;
+    gap: 10px;
+    margin-top: 20px;
+    text-shadow: 0 0 18px #f5b51b;
+
+}
+
+.cd-albums i {
+    font-size: xx-large;
+    margin-left: 20px;
+}
+
+.cd-albums::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 3px;
+
+    background: #f5b51b;
+
+    margin-top: 20px;
+    background: linear-gradient(to left, transparent, #f5b51b);
+}
+
+
+
+/* CD Albums Card */
+
+
+.cd-album-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cd-album-card {
+    background: #111722;
+    border: 1px solid #f5b51b;
+    border-radius: 14px;
+    padding: 14px;
+    width: 260px;
+    margin-left: 20px;
+}
+
+.cd-album-card h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 12px;
+    font-family: 'Poppins';
+    font-size: 30px;
+
+}
+
+.cd-album-card h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    color: #f5b51b;
+    font-size: 16px;
+}
+
+.cd-album-card p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+}
+
+.cd-album-card button {
+    width: 100%;
+    background: linear-gradient(90deg, #f5b51b, #ffcf5a);
+    color: black;
+    border: 1px solid #f5b51b;
+    padding: 9px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.cd-album-card:hover {
+    transform: translateY(6px);
+    box-shadow: 0 0 25px rgba(245, 181, 27, 0.6);
+
+}
+
+/* DVD Heading */
+
+.dvd-albums {
+    display: flex;
+    color: #b84dff;
+    gap: 10px;
+    margin-top: 40px;
+    text-shadow: 0 0 12px #c95fff;
+
+
+}
+
+.dvd-albums i {
+    font-size: xx-large;
+    margin-left: 20px;
+}
+
+.dvd-albums::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 3px;
+    background: #b84dff;
+    margin-top: 20px;
+    background: linear-gradient(to left, transparent, #b84dff);
+}
+
+
+/* DVD Album Card */
+
+.dvd-album-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.dvd-album-card {
+    background: #111722;
+    border: 1px solid #b84dff;
+    border-radius: 14px;
+    padding: 14px;
+    width: 260px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.dvd-album-card h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 12px;
+    font-family: 'Poppins';
+    font-size: 30px;
+}
+
+.dvd-album-card h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    color: #d46bff;
+    font-size: 16px;
+}
+
+.dvd-album-card p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+}
+
+.dvd-album-card button {
+    width: 100%;
+    background: linear-gradient(90deg, #8a2cff, #d946ef);
+    color: white;
+    border: 1px solid #b84dff;
+    padding: 9px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.dvd-album-card:hover {
+    transform: translateY(6px);
+
+    box-shadow: 0 0 25px rgba(184, 77, 255, 0.6);
+}
+
+/* TAPE Heading */
+
+.tape-albums {
+    display: flex;
+    color: #00d9ff;
+    gap: 10px;
+    margin-top: 40px;
+    text-shadow: 0 0 12px #00d9ff;
+}
+
+.tape-albums i {
+    font-size: xx-large;
+    margin-left: 20px;
+}
+
+.tape-albums::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 3px;
+    background: #00d9ff;
+    margin-top: 20px;
+    background: linear-gradient(to left, transparent, #00d9ff);
+}
+
+
+
+/* TAPE Album Card */
+
+.tape-album-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.tape-album-card {
+    background: #111722;
+    border: 1px solid #00d9ff;
+    border-radius: 14px;
+    padding: 14px;
+    width: 260px;
+    margin-left: 20px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.tape-album-card h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 12px;
+    font-family: 'Poppins';
+    font-size: 30px;
+}
+
+h6 {
+    color: white !important;
+}
+
+.tape-album-card h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    color: #00d9ff;
+    font-size: 16px;
+}
+
+.tape-album-card p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+}
+
+.tape-album-card button {
+    width: 100%;
+    background: linear-gradient(90deg, #009dff, #00e1ff);
+    color: white;
+    border: 1px solid #00d9ff;
+    padding: 9px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.tape-album-card:hover {
+    transform: translateY(6px);
+    box-shadow: 0 0 25px rgba(0, 217, 255, 0.6);
+}
+
+/* MOVIE Heading */
+
+.movie-albums {
+    display: flex;
+    color: #ff8c00;
+    gap: 10px;
+    margin-top: 40px;
+    text-shadow: 0 0 12px #ff8c00;
+}
+
+.movie-albums i {
+    font-size: xx-large;
+    margin-left: 20px;
+}
+
+.movie-albums::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 3px;
+    background: #ff8c00;
+    margin-top: 20px;
+    background: linear-gradient(to left, transparent, #ff8c00);
+}
+
+
+/* MOVIE Cards */
+
+.movie-album-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.movie-album-card {
+    background: #111722;
+    border: 1px solid #ff8c00;
+    border-radius: 14px;
+    padding: 14px;
+    width: 260px;
+    margin-left: 20px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.movie-album-card h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white ;
+    margin-top: 12px;
+    font-size: 30px;
+}
+
+.movie-album-card h6{
+    color: white !important;
+}
+
+.movie-album-card h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffb347;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.movie-album-card p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+}
+
+.movie-album-card button {
+    width: 100%;
+    background: linear-gradient(90deg, #ff8c00, #ffb347);
+    color: black;
+    border: none;
+    padding: 9px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.movie-album-card:hover {
+    transform: translateY(6px);
+    box-shadow: 0 0 25px rgba(255, 140, 0, 0.6);
+}
+
+/* BANDS Heading */
+
+.bands-albums {
+    display: flex;
+    color: #00ff88;
+    gap: 10px;
+    margin-top: 40px;
+    text-shadow: 0 0 12px #00ff88;
+}
+
+.bands-albums i {
+    font-size: xx-large;
+    margin-left: 20px;
+}
+
+.bands-albums::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 3px;
+    margin-top: 20px;
+    background: linear-gradient(to left, transparent, #00ff88);
+}
+
+
+/* BANDS Cards */
+
+.bands-album-card {
+    background: #111722;
+    border: 1px solid #00ff88;
+    border-radius: 14px;
+    padding: 14px;
+    width: 260px;
+    margin-left: 20px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.bands-album-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.bands-album-card h3,
+.solo-album-card h3 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 12px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.bands-album-card h5 {
+    display: flex;
+    justify-content: center;
+    color: #00ff88;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.bands-album-card p,
+.solo-album-card p {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+}
+
+.bands-album-card button {
+    width: 100%;
+    background: linear-gradient(90deg, #00cc66, #00ff88);
+    color: black;
+    border: none;
+    padding: 9px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.bands-album-card:hover {
+    transform: translateY(6px);
+    box-shadow: 0 0 25px rgba(0, 255, 136, 0.6);
+}
+
+/* SOLO PERFORMERS Heading */
+
+.solo-albums {
+    display: flex;
+    color: #ff3d71;
+    gap: 10px;
+    margin-top: 40px;
+    text-shadow: 0 0 12px #ff3d71;
+}
+
+.solo-albums i {
+    font-size: xx-large;
+    margin-left: 20px;
+}
+
+.solo-albums::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 3px;
+    margin-top: 20px;
+    background: linear-gradient(to left, transparent, #ff3d71);
+}
+
+/* SOLO PERFORMERS Cards */
+
+.solo-album-card {
+    background: #111722;
+    border: 1px solid #ff3d71;
+    border-radius: 14px;
+    padding: 14px;
+    width: 260px;
+    margin-left: 20px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.solo-album-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.solo-album-card h5 {
+    display: flex;
+    justify-content: center;
+    color: #ff6f91;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.solo-album-card button {
+    width: 100%;
+    background: linear-gradient(90deg, #ff2d7a, #ff6f91);
+    color: white;
+    border: none;
+    padding: 9px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.solo-album-card:hover {
+    transform: translateY(6px);
+    box-shadow: 0 0 25px rgba(255, 61, 113, 0.6);
+}
+
+
+/* footer  */
+
+.bg-theme-dark {
+    background: black;
+}
+
+footer a {
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+footer a:hover {
+    color: #d2a679 !important;
+}
